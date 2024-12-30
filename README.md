@@ -37,7 +37,7 @@ Ensure communication between CE1 and CE2 for the same customer using ```ping```.
 ### 4. Documentation
 #### Deliverables:
 * Save and document:
-  * **Topology File:** GNS3 or Packet Tracer project file.
+  * **Topology File:** Screenshot of the Topology.
   * **Router Configurations:** Exported configurations for all devices.
   * **Python Scripts:** Include automation scripts for specific tasks.
   * **README.md:**
