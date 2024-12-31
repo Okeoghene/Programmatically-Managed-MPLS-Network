@@ -2,3 +2,7 @@
 
 -   I created the routers topology.
 -   All routers are currently "Cisco IOU L3 157-3 2018" this is expected to change due to the capability requirement of the core routers and PE routers.
+
+31/12/2024
+
+-  I changed the topology to have only 1 core router. The project needs to be simple as the name implies.
