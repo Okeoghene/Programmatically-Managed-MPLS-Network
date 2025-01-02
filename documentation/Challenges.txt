@@ -2,3 +2,5 @@
 
 - The PE router refused to take config "neighbor 4.4.4.4 update-source loopback0".
   Resolved: Reconfigure interface loopback0 on the PE router.
+  
+- I ran out of memory space on the core routers. I had to manually increase the RAM and NVRAM size of the core routers.
