@@ -1,0 +1,4 @@
+02/01/2025
+
+- The PE router refused to take config "neighbor 4.4.4.4 update-source loopback0".
+  Resolved: Reconfigure interface loopback0 on the PE router.

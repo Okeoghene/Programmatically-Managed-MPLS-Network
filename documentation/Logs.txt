@@ -6,3 +6,12 @@
 31/12/2024
 
 -  I changed the topology to have only 1 core router. The project needs to be simple as the name implies.
+
+01/01/2025
+
+- I assigned IP addresses and activated IGP on the core. I also enabled LDP on the core routers.
+
+02/01/2025
+
+- I assigned IP addresses and activated IGP on the core. I also enabled LDP on the core routers.
+- I repeated task above becasue I didnt save the config on the router before powering down.
