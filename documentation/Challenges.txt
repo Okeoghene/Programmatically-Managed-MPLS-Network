@@ -4,3 +4,6 @@
   Resolved: Reconfigure interface loopback0 on the PE router.
   
 - I ran out of memory space on the core routers. I had to manually increase the RAM and NVRAM size of the core routers.
+  Resolved: Got a different router to run as the core router.
+
+- Unable  CE routers were unable to ping each other.

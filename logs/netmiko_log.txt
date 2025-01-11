@@ -1,0 +1,1145 @@
+
+2025-01-11 13:31:07,246 - paramiko.transport - DEBUG - starting thread (client mode): 0x636957f0
+2025-01-11 13:31:07,247 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.7.2
+2025-01-11 13:31:07,289 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-Cisco-1.25
+2025-01-11 13:31:07,289 - paramiko.transport - INFO - Connected (version 2.0, client Cisco-1.25)
+2025-01-11 13:31:07,291 - paramiko.transport - DEBUG - kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] server mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2025-01-11 13:31:07,291 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group-exchange-sha1
+2025-01-11 13:31:07,292 - paramiko.transport - DEBUG - HostKey agreed: ssh-rsa
+2025-01-11 13:31:07,292 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2025-01-11 13:31:07,292 - paramiko.transport - DEBUG - MAC agreed: hmac-sha2-256
+2025-01-11 13:31:07,292 - paramiko.transport - DEBUG - Compression agreed: none
+2025-01-11 13:31:07,299 - paramiko.transport - DEBUG - Got server p (2048 bits)
+2025-01-11 13:31:07,746 - paramiko.transport - DEBUG - kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2025-01-11 13:31:07,747 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-11 13:31:07,748 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 1.1.1.1: b'1eb99c63cd2a7d417895dc52fdb05cc6'
+2025-01-11 13:31:07,954 - paramiko.transport - DEBUG - userauth is OK
+2025-01-11 13:31:08,223 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-11 13:31:08,224 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-11 13:31:08,225 - paramiko.transport - DEBUG - [chan 0] Max packet out: 4096 bytes
+2025-01-11 13:31:08,225 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-11 13:31:08,226 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-11 13:31:08,228 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-11 13:31:08,228 - netmiko - DEBUG - write_channel: b'terminal width 511\n'
+2025-01-11 13:31:08,229 - netmiko - DEBUG - Pattern is: terminal width 511
+2025-01-11 13:31:08,229 - netmiko - DEBUG - _read_channel_expect read_data: CE1>
+2025-01-11 13:31:08,240 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:31:08,251 - netmiko - DEBUG - _read_channel_expect read_data: ermi
+2025-01-11 13:31:08,262 - netmiko - DEBUG - _read_channel_expect read_data: nal
+2025-01-11 13:31:08,272 - netmiko - DEBUG - _read_channel_expect read_data: widt
+2025-01-11 13:31:08,282 - netmiko - DEBUG - _read_channel_expect read_data: h 51
+2025-01-11 13:31:08,293 - netmiko - DEBUG - _read_channel_expect read_data: 1
+CE1>
+2025-01-11 13:31:08,293 - netmiko - DEBUG - Pattern found: terminal width 511 CE1>terminal width 511
+CE1>
+2025-01-11 13:31:08,293 - netmiko - DEBUG - In disable_paging
+2025-01-11 13:31:08,293 - netmiko - DEBUG - Command: terminal length 0
+
+2025-01-11 13:31:08,293 - netmiko - DEBUG - write_channel: b'terminal length 0\n'
+2025-01-11 13:31:08,294 - netmiko - DEBUG - Pattern is: terminal\ length\ 0
+2025-01-11 13:31:08,299 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:31:08,310 - netmiko - DEBUG - _read_channel_expect read_data: ermi
+2025-01-11 13:31:08,320 - netmiko - DEBUG - _read_channel_expect read_data: nal
+2025-01-11 13:31:08,330 - netmiko - DEBUG - _read_channel_expect read_data:  len
+2025-01-11 13:31:08,341 - netmiko - DEBUG - _read_channel_expect read_data: gth
+2025-01-11 13:31:08,351 - netmiko - DEBUG - _read_channel_expect read_data: 0
+CE1>
+2025-01-11 13:31:08,352 - netmiko - DEBUG - Pattern found: terminal\ length\ 0 terminal length 0
+CE1>
+2025-01-11 13:31:08,352 - netmiko - DEBUG - terminal length 0
+CE1>
+2025-01-11 13:31:08,352 - netmiko - DEBUG - Exiting disable_paging
+2025-01-11 13:31:08,362 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:08,363 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:08,373 - netmiko - DEBUG - read_channel:
+
+2025-01-11 13:31:08,373 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:08,374 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:08,384 - netmiko - DEBUG - read_channel: CE1>
+
+2025-01-11 13:31:08,406 - netmiko - DEBUG - read_channel: CE1>
+2025-01-11 13:31:08,406 - netmiko - DEBUG - Clear buffer detects data in the channel
+2025-01-11 13:31:08,426 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:08,427 - netmiko - DEBUG - [find_prompt()]: prompt is CE1>
+2025-01-11 13:31:08,427 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:08,427 - netmiko - DEBUG - Pattern is: CE1
+2025-01-11 13:31:08,438 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:08,449 - netmiko - DEBUG - _read_channel_expect read_data: CE1>
+2025-01-11 13:31:08,449 - netmiko - DEBUG - Pattern found: CE1
+CE1>
+2025-01-11 13:31:08,450 - netmiko - DEBUG - write_channel: b'enable\n'
+2025-01-11 13:31:08,450 - netmiko - DEBUG - Pattern is: enable
+2025-01-11 13:31:08,455 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:31:08,466 - netmiko - DEBUG - _read_channel_expect read_data: nable
+Password:
+2025-01-11 13:31:08,466 - netmiko - DEBUG - Pattern found: enable enable
+Password:
+2025-01-11 13:31:08,467 - netmiko - DEBUG - write_channel: b'r@mAdan\n'
+2025-01-11 13:31:08,467 - netmiko - DEBUG - Pattern is: CE1
+2025-01-11 13:31:08,750 - netmiko - DEBUG - _read_channel_expect read_data:
+CE1#
+2025-01-11 13:31:08,750 - netmiko - DEBUG - Pattern found: CE1
+CE1#
+2025-01-11 13:31:08,750 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:08,751 - netmiko - DEBUG - Pattern is: CE1
+2025-01-11 13:31:08,756 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:08,767 - netmiko - DEBUG - _read_channel_expect read_data: CE1#
+2025-01-11 13:31:08,767 - netmiko - DEBUG - Pattern found: CE1
+CE1#
+2025-01-11 13:31:08,767 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:08,768 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:31:08,774 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:08,785 - netmiko - DEBUG - _read_channel_expect read_data: CE1#
+2025-01-11 13:31:08,786 - netmiko - DEBUG - Pattern found: #
+CE1#
+2025-01-11 13:31:08,787 - netmiko - DEBUG - write_channel: b'configure terminal\n'
+2025-01-11 13:31:08,787 - netmiko - DEBUG - Pattern is: configure\ terminal
+2025-01-11 13:31:08,792 - netmiko - DEBUG - _read_channel_expect read_data: c
+2025-01-11 13:31:08,803 - netmiko - DEBUG - _read_channel_expect read_data: onf
+2025-01-11 13:31:08,814 - netmiko - DEBUG - _read_channel_expect read_data: igu
+2025-01-11 13:31:08,824 - netmiko - DEBUG - _read_channel_expect read_data: re t
+2025-01-11 13:31:08,835 - netmiko - DEBUG - _read_channel_expect read_data: ermin
+2025-01-11 13:31:08,845 - netmiko - DEBUG - _read_channel_expect read_data: al
+Enter configuration commands, one per line.  End with CNTL/Z.
+CE1(config)#
+2025-01-11 13:31:08,846 - netmiko - DEBUG - Pattern found: configure\ terminal configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+CE1(config)#
+2025-01-11 13:31:08,846 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:08,846 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:31:08,852 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:08,862 - netmiko - DEBUG - _read_channel_expect read_data: CE1(config)#
+2025-01-11 13:31:08,863 - netmiko - DEBUG - Pattern found: #
+CE1(config)#
+2025-01-11 13:31:08,863 - netmiko - DEBUG - write_channel: b'ntp server 192.168.1.100\n'
+2025-01-11 13:31:08,863 - netmiko - DEBUG - Pattern is: ntp\ server\ 192\.168\.1\.100
+2025-01-11 13:31:08,869 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:31:08,880 - netmiko - DEBUG - _read_channel_expect read_data: tp s
+2025-01-11 13:31:08,890 - netmiko - DEBUG - _read_channel_expect read_data: er
+2025-01-11 13:31:08,901 - netmiko - DEBUG - _read_channel_expect read_data: ver
+2025-01-11 13:31:08,911 - netmiko - DEBUG - _read_channel_expect read_data: 192.
+2025-01-11 13:31:08,922 - netmiko - DEBUG - _read_channel_expect read_data: 168.
+2025-01-11 13:31:08,932 - netmiko - DEBUG - _read_channel_expect read_data: 1.10
+2025-01-11 13:31:08,943 - netmiko - DEBUG - _read_channel_expect read_data: 0
+CE1(config)#
+2025-01-11 13:31:08,943 - netmiko - DEBUG - Pattern found: ntp\ server\ 192\.168\.1\.100 ntp server 192.168.1.100
+CE1(config)#
+2025-01-11 13:31:08,943 - netmiko - DEBUG - write_channel: b'logging 192.168.1.200\n'
+2025-01-11 13:31:08,944 - netmiko - DEBUG - Pattern is: logging\ 192\.168\.1\.200
+2025-01-11 13:31:08,949 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:31:08,960 - netmiko - DEBUG - _read_channel_expect read_data: oggi
+2025-01-11 13:31:08,970 - netmiko - DEBUG - _read_channel_expect read_data: ng 1
+2025-01-11 13:31:08,981 - netmiko - DEBUG - _read_channel_expect read_data: 92.
+2025-01-11 13:31:08,991 - netmiko - DEBUG - _read_channel_expect read_data: 168
+2025-01-11 13:31:09,002 - netmiko - DEBUG - _read_channel_expect read_data: .1.2
+2025-01-11 13:31:09,012 - netmiko - DEBUG - _read_channel_expect read_data: 00
+CE1(config)#
+2025-01-11 13:31:09,012 - netmiko - DEBUG - Pattern found: logging\ 192\.168\.1\.200 logging 192.168.1.200
+CE1(config)#
+2025-01-11 13:31:09,012 - netmiko - DEBUG - write_channel: b'logging trap informational\n'
+2025-01-11 13:31:09,013 - netmiko - DEBUG - Pattern is: logging\ trap\ informational
+2025-01-11 13:31:09,018 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:31:09,029 - netmiko - DEBUG - _read_channel_expect read_data: oggi
+2025-01-11 13:31:09,040 - netmiko - DEBUG - _read_channel_expect read_data: ng t
+2025-01-11 13:31:09,050 - netmiko - DEBUG - _read_channel_expect read_data: rap
+2025-01-11 13:31:09,062 - netmiko - DEBUG - _read_channel_expect read_data: info
+2025-01-11 13:31:09,072 - netmiko - DEBUG - _read_channel_expect read_data: rmat
+2025-01-11 13:31:09,083 - netmiko - DEBUG - _read_channel_expect read_data: iona
+2025-01-11 13:31:09,093 - netmiko - DEBUG - _read_channel_expect read_data: l
+CE1(config)#
+2025-01-11 13:31:09,093 - netmiko - DEBUG - Pattern found: logging\ trap\ informational logging trap informational
+CE1(config)#
+2025-01-11 13:31:09,094 - netmiko - DEBUG - write_channel: b'aaa new-model\n'
+2025-01-11 13:31:09,094 - netmiko - DEBUG - Pattern is: aaa\ new\-model
+2025-01-11 13:31:09,100 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:09,111 - netmiko - DEBUG - _read_channel_expect read_data: aa n
+2025-01-11 13:31:09,121 - netmiko - DEBUG - _read_channel_expect read_data: ew-m
+2025-01-11 13:31:09,132 - netmiko - DEBUG - _read_channel_expect read_data: odel
+2025-01-11 13:31:09,132 - netmiko - DEBUG - Pattern found: aaa\ new\-model aaa new-model
+2025-01-11 13:31:09,132 - netmiko - DEBUG - Pattern is: (?:CE1|#)
+2025-01-11 13:31:09,136 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:09,146 - netmiko - DEBUG - _read_channel_expect read_data: CE1(config)#
+2025-01-11 13:31:09,146 - netmiko - DEBUG - Pattern found: (?:CE1|#)
+CE1(config)#
+2025-01-11 13:31:09,147 - netmiko - DEBUG - write_channel: b'aaa authentication login default local\n'
+2025-01-11 13:31:09,147 - netmiko - DEBUG - Pattern is: aaa\ authentication\ login\ default\ local
+2025-01-11 13:31:09,153 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:09,164 - netmiko - DEBUG - _read_channel_expect read_data: aa a
+2025-01-11 13:31:09,174 - netmiko - DEBUG - _read_channel_expect read_data: uthe
+2025-01-11 13:31:09,185 - netmiko - DEBUG - _read_channel_expect read_data: nti
+2025-01-11 13:31:09,196 - netmiko - DEBUG - _read_channel_expect read_data: cati
+2025-01-11 13:31:09,206 - netmiko - DEBUG - _read_channel_expect read_data: on
+2025-01-11 13:31:09,217 - netmiko - DEBUG - _read_channel_expect read_data: logi
+2025-01-11 13:31:09,227 - netmiko - DEBUG - _read_channel_expect read_data: n de
+2025-01-11 13:31:09,238 - netmiko - DEBUG - _read_channel_expect read_data: faul
+2025-01-11 13:31:09,248 - netmiko - DEBUG - _read_channel_expect read_data: t lo
+2025-01-11 13:31:09,259 - netmiko - DEBUG - _read_channel_expect read_data: cal
+
+2025-01-11 13:31:09,259 - netmiko - DEBUG - Pattern found: aaa\ authentication\ login\ default\ local aaa authentication login default local
+
+2025-01-11 13:31:09,259 - netmiko - DEBUG - Pattern is: (?:CE1|#)
+2025-01-11 13:31:09,264 - netmiko - DEBUG - _read_channel_expect read_data: CE1(config)#
+2025-01-11 13:31:09,264 - netmiko - DEBUG - Pattern found: (?:CE1|#) CE1(config)#
+2025-01-11 13:31:09,264 - netmiko - DEBUG - write_channel: b'aaa authorization exec default local\n'
+2025-01-11 13:31:09,264 - netmiko - DEBUG - Pattern is: aaa\ authorization\ exec\ default\ local
+2025-01-11 13:31:09,274 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:09,285 - netmiko - DEBUG - _read_channel_expect read_data: aa
+2025-01-11 13:31:09,295 - netmiko - DEBUG - _read_channel_expect read_data: auth
+2025-01-11 13:31:09,306 - netmiko - DEBUG - _read_channel_expect read_data: oriz
+2025-01-11 13:31:09,317 - netmiko - DEBUG - _read_channel_expect read_data: ati
+2025-01-11 13:31:09,329 - netmiko - DEBUG - _read_channel_expect read_data: on e
+2025-01-11 13:31:09,339 - netmiko - DEBUG - _read_channel_expect read_data: xec
+2025-01-11 13:31:09,350 - netmiko - DEBUG - _read_channel_expect read_data: defa
+2025-01-11 13:31:09,361 - netmiko - DEBUG - _read_channel_expect read_data: ult
+2025-01-11 13:31:09,372 - netmiko - DEBUG - _read_channel_expect read_data: loca
+2025-01-11 13:31:09,383 - netmiko - DEBUG - _read_channel_expect read_data: l
+CE1(config)#
+2025-01-11 13:31:09,383 - netmiko - DEBUG - Pattern found: aaa\ authorization\ exec\ default\ local aaa authorization exec default local
+CE1(config)#
+2025-01-11 13:31:09,383 - netmiko - DEBUG - write_channel: b'write memory\n'
+2025-01-11 13:31:09,383 - netmiko - DEBUG - Pattern is: write\ memory
+2025-01-11 13:31:09,390 - netmiko - DEBUG - _read_channel_expect read_data: w
+2025-01-11 13:31:09,401 - netmiko - DEBUG - _read_channel_expect read_data: rit
+2025-01-11 13:31:09,412 - netmiko - DEBUG - _read_channel_expect read_data: e m
+2025-01-11 13:31:09,423 - netmiko - DEBUG - _read_channel_expect read_data: emor
+2025-01-11 13:31:09,433 - netmiko - DEBUG - _read_channel_expect read_data: y
+             ^
+% Invalid input detected at '^' marker.
+
+CE1(config)#
+2025-01-11 13:31:09,434 - netmiko - DEBUG - Pattern found: write\ memory write memory
+             ^
+% Invalid input detected at '^' marker.
+
+CE1(config)#
+2025-01-11 13:31:09,434 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:09,434 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:31:09,440 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:09,450 - netmiko - DEBUG - _read_channel_expect read_data: CE1(config)#
+2025-01-11 13:31:09,450 - netmiko - DEBUG - Pattern found: #
+CE1(config)#
+2025-01-11 13:31:09,451 - netmiko - DEBUG - write_channel: b'end\n'
+2025-01-11 13:31:09,451 - netmiko - DEBUG - Pattern is: end
+2025-01-11 13:31:09,457 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:31:09,468 - netmiko - DEBUG - _read_channel_expect read_data: nd
+
+2025-01-11 13:31:09,468 - netmiko - DEBUG - Pattern found: end end
+
+2025-01-11 13:31:09,468 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:31:09,470 - netmiko - DEBUG - _read_channel_expect read_data: CE1#
+2025-01-11 13:31:09,470 - netmiko - DEBUG - Pattern found: # CE1#
+2025-01-11 13:31:09,470 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:09,470 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:31:09,476 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:09,486 - netmiko - DEBUG - _read_channel_expect read_data: CE1#
+2025-01-11 13:31:09,487 - netmiko - DEBUG - Pattern found: #
+CE1#
+2025-01-11 13:31:09,487 - netmiko - DEBUG - exit_config_mode: end
+CE1#
+2025-01-11 13:31:09,487 - netmiko - DEBUG - configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+CE1(config)#ntp server 192.168.1.100
+CE1(config)#logging 192.168.1.200
+CE1(config)#logging trap informational
+CE1(config)#aaa new-model
+CE1(config)#aaa authentication login default local
+CE1(config)#aaa authorization exec default local
+CE1(config)#write memory
+             ^
+% Invalid input detected at '^' marker.
+
+CE1(config)#end
+CE1#
+2025-01-11 13:31:09,487 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:09,588 - netmiko - DEBUG - read_channel:
+CE1#
+2025-01-11 13:31:09,688 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:11,690 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:11,691 - netmiko - DEBUG - write_channel: b'exit\n'
+2025-01-11 13:31:11,704 - paramiko.transport - DEBUG - starting thread (client mode): 0x63655dc0
+2025-01-11 13:31:11,705 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.7.2
+2025-01-11 13:31:11,705 - paramiko.transport - DEBUG - EOF in transport thread
+2025-01-11 13:31:11,769 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-Cisco-1.25
+2025-01-11 13:31:11,769 - paramiko.transport - INFO - Connected (version 2.0, client Cisco-1.25)
+2025-01-11 13:31:11,776 - paramiko.transport - DEBUG - kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] server mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2025-01-11 13:31:11,777 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group-exchange-sha1
+2025-01-11 13:31:11,777 - paramiko.transport - DEBUG - HostKey agreed: ssh-rsa
+2025-01-11 13:31:11,777 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2025-01-11 13:31:11,777 - paramiko.transport - DEBUG - MAC agreed: hmac-sha2-256
+2025-01-11 13:31:11,777 - paramiko.transport - DEBUG - Compression agreed: none
+2025-01-11 13:31:11,803 - paramiko.transport - DEBUG - Got server p (2048 bits)
+2025-01-11 13:31:12,201 - paramiko.transport - DEBUG - kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2025-01-11 13:31:12,202 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-11 13:31:12,203 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 5.5.5.5: b'3faac3b53cce18152675183cfa422200'
+2025-01-11 13:31:12,418 - paramiko.transport - DEBUG - userauth is OK
+2025-01-11 13:31:12,697 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-11 13:31:12,698 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-11 13:31:12,706 - paramiko.transport - DEBUG - [chan 0] Max packet out: 4096 bytes
+2025-01-11 13:31:12,706 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-11 13:31:12,716 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-11 13:31:12,727 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-11 13:31:12,728 - netmiko - DEBUG - write_channel: b'terminal width 511\n'
+2025-01-11 13:31:12,728 - netmiko - DEBUG - Pattern is: terminal width 511
+2025-01-11 13:31:12,729 - netmiko - DEBUG - _read_channel_expect read_data: CE2>
+2025-01-11 13:31:12,742 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:31:12,752 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:31:12,763 - netmiko - DEBUG - _read_channel_expect read_data: rmina
+2025-01-11 13:31:12,773 - netmiko - DEBUG - _read_channel_expect read_data: l w
+2025-01-11 13:31:12,784 - netmiko - DEBUG - _read_channel_expect read_data: id
+2025-01-11 13:31:12,794 - netmiko - DEBUG - _read_channel_expect read_data: th
+2025-01-11 13:31:12,809 - netmiko - DEBUG - _read_channel_expect read_data:
+2025-01-11 13:31:12,819 - netmiko - DEBUG - _read_channel_expect read_data: 511
+
+2025-01-11 13:31:12,819 - netmiko - DEBUG - Pattern found: terminal width 511 CE2>terminal width 511
+
+2025-01-11 13:31:12,820 - netmiko - DEBUG - In disable_paging
+2025-01-11 13:31:12,820 - netmiko - DEBUG - Command: terminal length 0
+
+2025-01-11 13:31:12,820 - netmiko - DEBUG - write_channel: b'terminal length 0\n'
+2025-01-11 13:31:12,820 - netmiko - DEBUG - Pattern is: terminal\ length\ 0
+2025-01-11 13:31:12,820 - netmiko - DEBUG - _read_channel_expect read_data: CE2>
+2025-01-11 13:31:12,841 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:31:12,852 - netmiko - DEBUG - _read_channel_expect read_data: er
+2025-01-11 13:31:12,862 - netmiko - DEBUG - _read_channel_expect read_data: min
+2025-01-11 13:31:12,872 - netmiko - DEBUG - _read_channel_expect read_data: al
+2025-01-11 13:31:12,883 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:31:12,893 - netmiko - DEBUG - _read_channel_expect read_data: en
+2025-01-11 13:31:12,910 - netmiko - DEBUG - _read_channel_expect read_data: gt
+2025-01-11 13:31:12,923 - netmiko - DEBUG - _read_channel_expect read_data: h
+2025-01-11 13:31:12,934 - netmiko - DEBUG - _read_channel_expect read_data:  0
+CE2>
+2025-01-11 13:31:12,935 - netmiko - DEBUG - Pattern found: terminal\ length\ 0 CE2>terminal length 0
+CE2>
+2025-01-11 13:31:12,935 - netmiko - DEBUG - CE2>terminal length 0
+CE2>
+2025-01-11 13:31:12,935 - netmiko - DEBUG - Exiting disable_paging
+2025-01-11 13:31:12,947 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:12,948 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:12,958 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:12,959 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:12,959 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:12,969 - netmiko - DEBUG - read_channel:
+
+2025-01-11 13:31:12,970 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:12,990 - netmiko - DEBUG - read_channel: CE2>
+CE2>
+2025-01-11 13:31:13,011 - netmiko - DEBUG - read_channel:
+CE2>
+2025-01-11 13:31:13,011 - netmiko - DEBUG - Clear buffer detects data in the channel
+2025-01-11 13:31:13,032 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:13,032 - netmiko - DEBUG - [find_prompt()]: prompt is CE2>
+2025-01-11 13:31:13,033 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:13,033 - netmiko - DEBUG - Pattern is: CE2
+2025-01-11 13:31:13,057 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:13,068 - netmiko - DEBUG - _read_channel_expect read_data: CE2>
+2025-01-11 13:31:13,069 - netmiko - DEBUG - Pattern found: CE2
+CE2>
+2025-01-11 13:31:13,069 - netmiko - DEBUG - write_channel: b'enable\n'
+2025-01-11 13:31:13,069 - netmiko - DEBUG - Pattern is: enable
+2025-01-11 13:31:13,081 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:31:13,091 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:31:13,102 - netmiko - DEBUG - _read_channel_expect read_data: able
+2025-01-11 13:31:13,102 - netmiko - DEBUG - Pattern found: enable enable
+2025-01-11 13:31:13,102 - netmiko - DEBUG - Pattern is: (CE2|ssword)
+2025-01-11 13:31:13,106 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:13,117 - netmiko - DEBUG - _read_channel_expect read_data: Password:
+2025-01-11 13:31:13,117 - netmiko - DEBUG - Pattern found: (CE2|ssword)
+Password:
+2025-01-11 13:31:13,117 - netmiko - DEBUG - write_channel: b'r@mAdan\n'
+2025-01-11 13:31:13,118 - netmiko - DEBUG - Pattern is: CE2
+2025-01-11 13:31:13,430 - netmiko - DEBUG - _read_channel_expect read_data:
+CE2#
+2025-01-11 13:31:13,430 - netmiko - DEBUG - Pattern found: CE2
+CE2#
+2025-01-11 13:31:13,431 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:13,431 - netmiko - DEBUG - Pattern is: CE2
+2025-01-11 13:31:13,442 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:13,452 - netmiko - DEBUG - _read_channel_expect read_data: CE2#
+2025-01-11 13:31:13,452 - netmiko - DEBUG - Pattern found: CE2
+CE2#
+2025-01-11 13:31:13,453 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:13,453 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:31:13,466 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:13,476 - netmiko - DEBUG - _read_channel_expect read_data: CE2#
+2025-01-11 13:31:13,477 - netmiko - DEBUG - Pattern found: #
+CE2#
+2025-01-11 13:31:13,477 - netmiko - DEBUG - write_channel: b'configure terminal\n'
+2025-01-11 13:31:13,477 - netmiko - DEBUG - Pattern is: configure\ terminal
+2025-01-11 13:31:13,490 - netmiko - DEBUG - _read_channel_expect read_data: c
+2025-01-11 13:31:13,501 - netmiko - DEBUG - _read_channel_expect read_data: o
+2025-01-11 13:31:13,511 - netmiko - DEBUG - _read_channel_expect read_data: nf
+2025-01-11 13:31:13,522 - netmiko - DEBUG - _read_channel_expect read_data: igur
+2025-01-11 13:31:13,532 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:31:13,542 - netmiko - DEBUG - _read_channel_expect read_data: term
+2025-01-11 13:31:13,553 - netmiko - DEBUG - _read_channel_expect read_data: i
+2025-01-11 13:31:13,564 - netmiko - DEBUG - _read_channel_expect read_data: nal
+2025-01-11 13:31:13,564 - netmiko - DEBUG - Pattern found: configure\ terminal configure terminal
+2025-01-11 13:31:13,564 - netmiko - DEBUG - Pattern is: CE2
+2025-01-11 13:31:13,569 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:13,579 - netmiko - DEBUG - _read_channel_expect read_data: Enter configuration commands, one per line.  End with CNTL/Z.
+CE2(config)#
+2025-01-11 13:31:13,579 - netmiko - DEBUG - Pattern found: CE2
+Enter configuration commands, one per line.  End with CNTL/Z.
+CE2(config)#
+2025-01-11 13:31:13,580 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:13,580 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:31:13,591 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:13,602 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:31:13,602 - netmiko - DEBUG - Pattern found: #
+CE2(config)#
+2025-01-11 13:31:13,602 - netmiko - DEBUG - write_channel: b'ntp server 192.168.1.100\n'
+2025-01-11 13:31:13,602 - netmiko - DEBUG - Pattern is: ntp\ server\ 192\.168\.1\.100
+2025-01-11 13:31:13,610 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:31:13,621 - netmiko - DEBUG - _read_channel_expect read_data: tp
+2025-01-11 13:31:13,631 - netmiko - DEBUG - _read_channel_expect read_data:  s
+2025-01-11 13:31:13,642 - netmiko - DEBUG - _read_channel_expect read_data: erv
+2025-01-11 13:31:13,652 - netmiko - DEBUG - _read_channel_expect read_data: er
+2025-01-11 13:31:13,663 - netmiko - DEBUG - _read_channel_expect read_data: 19
+2025-01-11 13:31:13,673 - netmiko - DEBUG - _read_channel_expect read_data: 2.1
+2025-01-11 13:31:13,684 - netmiko - DEBUG - _read_channel_expect read_data: 68
+2025-01-11 13:31:13,694 - netmiko - DEBUG - _read_channel_expect read_data: .1.
+2025-01-11 13:31:13,705 - netmiko - DEBUG - _read_channel_expect read_data: 100
+2025-01-11 13:31:13,705 - netmiko - DEBUG - Pattern found: ntp\ server\ 192\.168\.1\.100 ntp server 192.168.1.100
+2025-01-11 13:31:13,705 - netmiko - DEBUG - Pattern is: (?:CE2|#)
+2025-01-11 13:31:13,707 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:13,718 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:31:13,718 - netmiko - DEBUG - Pattern found: (?:CE2|#)
+CE2(config)#
+2025-01-11 13:31:13,718 - netmiko - DEBUG - write_channel: b'logging 192.168.1.200\n'
+2025-01-11 13:31:13,718 - netmiko - DEBUG - Pattern is: logging\ 192\.168\.1\.200
+2025-01-11 13:31:13,729 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:31:13,740 - netmiko - DEBUG - _read_channel_expect read_data: og
+2025-01-11 13:31:13,750 - netmiko - DEBUG - _read_channel_expect read_data: gi
+2025-01-11 13:31:13,761 - netmiko - DEBUG - _read_channel_expect read_data: ng
+2025-01-11 13:31:13,771 - netmiko - DEBUG - _read_channel_expect read_data: 192.
+2025-01-11 13:31:13,782 - netmiko - DEBUG - _read_channel_expect read_data: 16
+2025-01-11 13:31:13,793 - netmiko - DEBUG - _read_channel_expect read_data: 8.1
+2025-01-11 13:31:13,803 - netmiko - DEBUG - _read_channel_expect read_data: .20
+2025-01-11 13:31:13,814 - netmiko - DEBUG - _read_channel_expect read_data: 0
+
+2025-01-11 13:31:13,814 - netmiko - DEBUG - Pattern found: logging\ 192\.168\.1\.200 logging 192.168.1.200
+
+2025-01-11 13:31:13,814 - netmiko - DEBUG - Pattern is: (?:CE2|#)
+2025-01-11 13:31:13,815 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:31:13,815 - netmiko - DEBUG - Pattern found: (?:CE2|#) CE2(config)#
+2025-01-11 13:31:13,815 - netmiko - DEBUG - write_channel: b'logging trap informational\n'
+2025-01-11 13:31:13,815 - netmiko - DEBUG - Pattern is: logging\ trap\ informational
+2025-01-11 13:31:13,827 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:31:13,838 - netmiko - DEBUG - _read_channel_expect read_data: ogg
+2025-01-11 13:31:13,848 - netmiko - DEBUG - _read_channel_expect read_data: ing
+2025-01-11 13:31:13,858 - netmiko - DEBUG - _read_channel_expect read_data:  t
+2025-01-11 13:31:13,870 - netmiko - DEBUG - _read_channel_expect read_data: r
+2025-01-11 13:31:13,881 - netmiko - DEBUG - _read_channel_expect read_data: ap
+2025-01-11 13:31:13,891 - netmiko - DEBUG - _read_channel_expect read_data: info
+2025-01-11 13:31:13,902 - netmiko - DEBUG - _read_channel_expect read_data: rmat
+2025-01-11 13:31:13,912 - netmiko - DEBUG - _read_channel_expect read_data: i
+2025-01-11 13:31:13,923 - netmiko - DEBUG - _read_channel_expect read_data: ona
+2025-01-11 13:31:13,933 - netmiko - DEBUG - _read_channel_expect read_data: l
+
+2025-01-11 13:31:13,933 - netmiko - DEBUG - Pattern found: logging\ trap\ informational logging trap informational
+
+2025-01-11 13:31:13,933 - netmiko - DEBUG - Pattern is: (?:CE2|#)
+2025-01-11 13:31:13,937 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:31:13,937 - netmiko - DEBUG - Pattern found: (?:CE2|#) CE2(config)#
+2025-01-11 13:31:13,937 - netmiko - DEBUG - write_channel: b'aaa new-model\n'
+2025-01-11 13:31:13,937 - netmiko - DEBUG - Pattern is: aaa\ new\-model
+2025-01-11 13:31:13,954 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:13,964 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:13,977 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:13,987 - netmiko - DEBUG - _read_channel_expect read_data:  new-
+2025-01-11 13:31:13,998 - netmiko - DEBUG - _read_channel_expect read_data: mod
+2025-01-11 13:31:14,012 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:31:14,041 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:31:14,041 - netmiko - DEBUG - Pattern found: aaa\ new\-model aaa new-model
+2025-01-11 13:31:14,042 - netmiko - DEBUG - Pattern is: (?:CE2|#)
+2025-01-11 13:31:14,043 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:14,055 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:31:14,055 - netmiko - DEBUG - Pattern found: (?:CE2|#)
+CE2(config)#
+2025-01-11 13:31:14,057 - netmiko - DEBUG - write_channel: b'aaa authentication login default local\n'
+2025-01-11 13:31:14,058 - netmiko - DEBUG - Pattern is: aaa\ authentication\ login\ default\ local
+2025-01-11 13:31:14,101 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:14,113 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:14,125 - netmiko - DEBUG - _read_channel_expect read_data: a auth
+2025-01-11 13:31:14,136 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:31:14,149 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:31:14,162 - netmiko - DEBUG - _read_channel_expect read_data: ticat
+2025-01-11 13:31:14,174 - netmiko - DEBUG - _read_channel_expect read_data: i
+2025-01-11 13:31:14,185 - netmiko - DEBUG - _read_channel_expect read_data: o
+2025-01-11 13:31:14,196 - netmiko - DEBUG - _read_channel_expect read_data: n l
+2025-01-11 13:31:14,211 - netmiko - DEBUG - _read_channel_expect read_data: ogin
+2025-01-11 13:31:14,246 - netmiko - DEBUG - _read_channel_expect read_data: def
+2025-01-11 13:31:14,257 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:14,268 - netmiko - DEBUG - _read_channel_expect read_data: u
+2025-01-11 13:31:14,334 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:31:14,371 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:31:14,382 - netmiko - DEBUG - _read_channel_expect read_data:  lo
+2025-01-11 13:31:14,429 - netmiko - DEBUG - _read_channel_expect read_data: c
+2025-01-11 13:31:14,440 - netmiko - DEBUG - _read_channel_expect read_data: al
+2025-01-11 13:31:14,441 - netmiko - DEBUG - Pattern found: aaa\ authentication\ login\ default\ local aaa authentication login default local
+2025-01-11 13:31:14,441 - netmiko - DEBUG - Pattern is: (?:CE2|#)
+2025-01-11 13:31:14,441 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:14,454 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:31:14,454 - netmiko - DEBUG - Pattern found: (?:CE2|#)
+CE2(config)#
+2025-01-11 13:31:14,455 - netmiko - DEBUG - write_channel: b'aaa authorization exec default local\n'
+2025-01-11 13:31:14,455 - netmiko - DEBUG - Pattern is: aaa\ authorization\ exec\ default\ local
+2025-01-11 13:31:14,543 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:14,554 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:14,564 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:14,575 - netmiko - DEBUG - _read_channel_expect read_data:  aut
+2025-01-11 13:31:14,587 - netmiko - DEBUG - _read_channel_expect read_data: h
+2025-01-11 13:31:14,602 - netmiko - DEBUG - _read_channel_expect read_data: or
+2025-01-11 13:31:14,615 - netmiko - DEBUG - _read_channel_expect read_data: i
+2025-01-11 13:31:14,631 - netmiko - DEBUG - _read_channel_expect read_data: z
+2025-01-11 13:31:14,645 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:31:14,656 - netmiko - DEBUG - _read_channel_expect read_data: tion
+2025-01-11 13:31:14,669 - netmiko - DEBUG - _read_channel_expect read_data:
+2025-01-11 13:31:14,682 - netmiko - DEBUG - _read_channel_expect read_data: exe
+2025-01-11 13:31:14,695 - netmiko - DEBUG - _read_channel_expect read_data: c d
+2025-01-11 13:31:14,705 - netmiko - DEBUG - _read_channel_expect read_data: ef
+2025-01-11 13:31:14,716 - netmiko - DEBUG - _read_channel_expect read_data: aul
+2025-01-11 13:31:14,727 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:31:14,738 - netmiko - DEBUG - _read_channel_expect read_data: loc
+2025-01-11 13:31:14,748 - netmiko - DEBUG - _read_channel_expect read_data: al
+
+2025-01-11 13:31:14,748 - netmiko - DEBUG - Pattern found: aaa\ authorization\ exec\ default\ local aaa authorization exec default local
+
+2025-01-11 13:31:14,749 - netmiko - DEBUG - Pattern is: (?:CE2|#)
+2025-01-11 13:31:14,763 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:31:14,763 - netmiko - DEBUG - Pattern found: (?:CE2|#) CE2(config)#
+2025-01-11 13:31:14,763 - netmiko - DEBUG - write_channel: b'write memory\n'
+2025-01-11 13:31:14,764 - netmiko - DEBUG - Pattern is: write\ memory
+2025-01-11 13:31:14,782 - netmiko - DEBUG - _read_channel_expect read_data: w
+2025-01-11 13:31:14,792 - netmiko - DEBUG - _read_channel_expect read_data: r
+2025-01-11 13:31:14,803 - netmiko - DEBUG - _read_channel_expect read_data: it
+2025-01-11 13:31:14,813 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:31:14,831 - netmiko - DEBUG - _read_channel_expect read_data: me
+2025-01-11 13:31:14,845 - netmiko - DEBUG - _read_channel_expect read_data: mo
+2025-01-11 13:31:14,856 - netmiko - DEBUG - _read_channel_expect read_data: ry
+             ^
+% Invalid input detected at '^' marker.
+
+CE2(config)#
+2025-01-11 13:31:14,856 - netmiko - DEBUG - Pattern found: write\ memory write memory
+             ^
+% Invalid input detected at '^' marker.
+
+CE2(config)#
+2025-01-11 13:31:14,856 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:14,857 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:31:14,884 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:14,896 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:31:14,896 - netmiko - DEBUG - Pattern found: #
+CE2(config)#
+2025-01-11 13:31:14,896 - netmiko - DEBUG - write_channel: b'end\n'
+2025-01-11 13:31:14,897 - netmiko - DEBUG - Pattern is: end
+2025-01-11 13:31:14,923 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:31:14,934 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:31:14,944 - netmiko - DEBUG - _read_channel_expect read_data: d
+
+2025-01-11 13:31:14,944 - netmiko - DEBUG - Pattern found: end end
+
+2025-01-11 13:31:14,945 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:31:14,951 - netmiko - DEBUG - _read_channel_expect read_data: CE2#
+2025-01-11 13:31:14,951 - netmiko - DEBUG - Pattern found: # CE2#
+2025-01-11 13:31:14,952 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:14,952 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:31:14,973 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:31:14,984 - netmiko - DEBUG - _read_channel_expect read_data: CE2#
+2025-01-11 13:31:14,984 - netmiko - DEBUG - Pattern found: #
+CE2#
+2025-01-11 13:31:14,984 - netmiko - DEBUG - exit_config_mode: end
+CE2#
+2025-01-11 13:31:14,984 - netmiko - DEBUG - configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+CE2(config)#ntp server 192.168.1.100
+CE2(config)#logging 192.168.1.200
+CE2(config)#logging trap informational
+CE2(config)#aaa new-model
+CE2(config)#aaa authentication login default local
+CE2(config)#aaa authorization exec default local
+CE2(config)#write memory
+             ^
+% Invalid input detected at '^' marker.
+
+CE2(config)#end
+CE2#
+2025-01-11 13:31:14,985 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:31:15,085 - netmiko - DEBUG - read_channel:
+CE2#
+2025-01-11 13:31:15,186 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:17,188 - netmiko - DEBUG - read_channel:
+2025-01-11 13:31:17,189 - netmiko - DEBUG - write_channel: b'exit\n'
+2025-01-11 13:34:14,380 - paramiko.transport - DEBUG - starting thread (client mode): 0x3b3887f0
+2025-01-11 13:34:14,380 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.7.2
+2025-01-11 13:34:14,392 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-Cisco-1.25
+2025-01-11 13:34:14,392 - paramiko.transport - INFO - Connected (version 2.0, client Cisco-1.25)
+2025-01-11 13:34:14,394 - paramiko.transport - DEBUG - kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] server mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2025-01-11 13:34:14,394 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group-exchange-sha1
+2025-01-11 13:34:14,394 - paramiko.transport - DEBUG - HostKey agreed: ssh-rsa
+2025-01-11 13:34:14,394 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2025-01-11 13:34:14,394 - paramiko.transport - DEBUG - MAC agreed: hmac-sha2-256
+2025-01-11 13:34:14,394 - paramiko.transport - DEBUG - Compression agreed: none
+2025-01-11 13:34:14,396 - paramiko.transport - DEBUG - Got server p (2048 bits)
+2025-01-11 13:34:14,708 - paramiko.transport - DEBUG - kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2025-01-11 13:34:14,708 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-11 13:34:14,710 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 1.1.1.1: b'1eb99c63cd2a7d417895dc52fdb05cc6'
+2025-01-11 13:34:14,915 - paramiko.transport - DEBUG - userauth is OK
+2025-01-11 13:34:15,184 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-11 13:34:15,185 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-11 13:34:15,186 - paramiko.transport - DEBUG - [chan 0] Max packet out: 4096 bytes
+2025-01-11 13:34:15,186 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-11 13:34:15,188 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-11 13:34:15,189 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-11 13:34:15,190 - netmiko - DEBUG - write_channel: b'terminal width 511\n'
+2025-01-11 13:34:15,190 - netmiko - DEBUG - Pattern is: terminal width 511
+2025-01-11 13:34:15,191 - netmiko - DEBUG - _read_channel_expect read_data: CE1>
+2025-01-11 13:34:15,201 - netmiko - DEBUG - _read_channel_expect read_data: termin
+2025-01-11 13:34:15,212 - netmiko - DEBUG - _read_channel_expect read_data: al width 511
+CE1>
+2025-01-11 13:34:15,212 - netmiko - DEBUG - Pattern found: terminal width 511 CE1>terminal width 511
+CE1>
+2025-01-11 13:34:15,212 - netmiko - DEBUG - In disable_paging
+2025-01-11 13:34:15,212 - netmiko - DEBUG - Command: terminal length 0
+
+2025-01-11 13:34:15,212 - netmiko - DEBUG - write_channel: b'terminal length 0\n'
+2025-01-11 13:34:15,213 - netmiko - DEBUG - Pattern is: terminal\ length\ 0
+2025-01-11 13:34:15,218 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:34:15,232 - netmiko - DEBUG - _read_channel_expect read_data: erm
+2025-01-11 13:34:15,244 - netmiko - DEBUG - _read_channel_expect read_data: inal
+2025-01-11 13:34:15,255 - netmiko - DEBUG - _read_channel_expect read_data:  l
+2025-01-11 13:34:15,266 - netmiko - DEBUG - _read_channel_expect read_data: en
+2025-01-11 13:34:15,276 - netmiko - DEBUG - _read_channel_expect read_data: gth
+2025-01-11 13:34:15,287 - netmiko - DEBUG - _read_channel_expect read_data: 0
+CE1>
+2025-01-11 13:34:15,287 - netmiko - DEBUG - Pattern found: terminal\ length\ 0 terminal length 0
+CE1>
+2025-01-11 13:34:15,287 - netmiko - DEBUG - terminal length 0
+CE1>
+2025-01-11 13:34:15,287 - netmiko - DEBUG - Exiting disable_paging
+2025-01-11 13:34:15,297 - netmiko - DEBUG - read_channel:
+2025-01-11 13:34:15,298 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:15,309 - netmiko - DEBUG - read_channel:
+CE1>
+2025-01-11 13:34:15,329 - netmiko - DEBUG - read_channel:
+2025-01-11 13:34:15,330 - netmiko - DEBUG - [find_prompt()]: prompt is CE1>
+2025-01-11 13:34:15,330 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:15,330 - netmiko - DEBUG - Pattern is: CE1
+2025-01-11 13:34:15,339 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:15,350 - netmiko - DEBUG - _read_channel_expect read_data: CE1>
+2025-01-11 13:34:15,350 - netmiko - DEBUG - Pattern found: CE1
+CE1>
+2025-01-11 13:34:15,351 - netmiko - DEBUG - write_channel: b'enable\n'
+2025-01-11 13:34:15,351 - netmiko - DEBUG - Pattern is: enable
+2025-01-11 13:34:15,356 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:34:15,367 - netmiko - DEBUG - _read_channel_expect read_data: na
+2025-01-11 13:34:15,378 - netmiko - DEBUG - _read_channel_expect read_data: ble
+
+2025-01-11 13:34:15,378 - netmiko - DEBUG - Pattern found: enable enable
+
+2025-01-11 13:34:15,378 - netmiko - DEBUG - Pattern is: (CE1|ssword)
+2025-01-11 13:34:15,381 - netmiko - DEBUG - _read_channel_expect read_data: Password:
+2025-01-11 13:34:15,381 - netmiko - DEBUG - Pattern found: (CE1|ssword) Password:
+2025-01-11 13:34:15,382 - netmiko - DEBUG - write_channel: b'r@mAdan\n'
+2025-01-11 13:34:15,382 - netmiko - DEBUG - Pattern is: CE1
+2025-01-11 13:34:15,682 - netmiko - DEBUG - _read_channel_expect read_data:
+CE1#
+2025-01-11 13:34:15,683 - netmiko - DEBUG - Pattern found: CE1
+CE1#
+2025-01-11 13:34:15,683 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:15,683 - netmiko - DEBUG - Pattern is: CE1
+2025-01-11 13:34:15,688 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:15,699 - netmiko - DEBUG - _read_channel_expect read_data: CE1#
+2025-01-11 13:34:15,699 - netmiko - DEBUG - Pattern found: CE1
+CE1#
+2025-01-11 13:34:15,700 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:15,700 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:34:15,706 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:15,717 - netmiko - DEBUG - _read_channel_expect read_data: CE1#
+2025-01-11 13:34:15,717 - netmiko - DEBUG - Pattern found: #
+CE1#
+2025-01-11 13:34:15,717 - netmiko - DEBUG - write_channel: b'configure terminal\n'
+2025-01-11 13:34:15,717 - netmiko - DEBUG - Pattern is: configure\ terminal
+2025-01-11 13:34:15,723 - netmiko - DEBUG - _read_channel_expect read_data: c
+2025-01-11 13:34:15,733 - netmiko - DEBUG - _read_channel_expect read_data: onf
+2025-01-11 13:34:15,744 - netmiko - DEBUG - _read_channel_expect read_data: igur
+2025-01-11 13:34:15,754 - netmiko - DEBUG - _read_channel_expect read_data: e t
+2025-01-11 13:34:15,765 - netmiko - DEBUG - _read_channel_expect read_data: ermi
+2025-01-11 13:34:15,775 - netmiko - DEBUG - _read_channel_expect read_data: nal
+
+2025-01-11 13:34:15,776 - netmiko - DEBUG - Pattern found: configure\ terminal configure terminal
+
+2025-01-11 13:34:15,776 - netmiko - DEBUG - Pattern is: CE1
+2025-01-11 13:34:15,797 - netmiko - DEBUG - _read_channel_expect read_data: Enter configuration commands, one per line.  End with CNTL/Z.
+CE1(config)#
+2025-01-11 13:34:15,797 - netmiko - DEBUG - Pattern found: CE1 Enter configuration commands, one per line.  End with CNTL/Z.
+CE1(config)#
+2025-01-11 13:34:15,798 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:15,798 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:34:15,804 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:15,815 - netmiko - DEBUG - _read_channel_expect read_data: CE1(config)#
+2025-01-11 13:34:15,815 - netmiko - DEBUG - Pattern found: #
+CE1(config)#
+2025-01-11 13:34:15,816 - netmiko - DEBUG - write_channel: b'ntp server 192.168.1.100\n'
+2025-01-11 13:34:15,816 - netmiko - DEBUG - Pattern is: ntp\ server\ 192\.168\.1\.100
+2025-01-11 13:34:15,822 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:34:15,864 - netmiko - DEBUG - _read_channel_expect read_data: tp
+2025-01-11 13:34:15,876 - netmiko - DEBUG - _read_channel_expect read_data:  serve
+2025-01-11 13:34:15,886 - netmiko - DEBUG - _read_channel_expect read_data: r 19
+2025-01-11 13:34:15,897 - netmiko - DEBUG - _read_channel_expect read_data: 2.16
+2025-01-11 13:34:15,907 - netmiko - DEBUG - _read_channel_expect read_data: 8.1
+2025-01-11 13:34:15,918 - netmiko - DEBUG - _read_channel_expect read_data: .10
+2025-01-11 13:34:15,928 - netmiko - DEBUG - _read_channel_expect read_data: 0
+CE1(config)#
+2025-01-11 13:34:15,929 - netmiko - DEBUG - Pattern found: ntp\ server\ 192\.168\.1\.100 ntp server 192.168.1.100
+CE1(config)#
+2025-01-11 13:34:15,929 - netmiko - DEBUG - write_channel: b'logging 192.168.1.200\n'
+2025-01-11 13:34:15,929 - netmiko - DEBUG - Pattern is: logging\ 192\.168\.1\.200
+2025-01-11 13:34:15,933 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:34:15,943 - netmiko - DEBUG - _read_channel_expect read_data: og
+2025-01-11 13:34:15,955 - netmiko - DEBUG - _read_channel_expect read_data: ging
+2025-01-11 13:34:15,965 - netmiko - DEBUG - _read_channel_expect read_data:  192
+2025-01-11 13:34:15,975 - netmiko - DEBUG - _read_channel_expect read_data: .168
+2025-01-11 13:34:15,986 - netmiko - DEBUG - _read_channel_expect read_data: .1.2
+2025-01-11 13:34:15,997 - netmiko - DEBUG - _read_channel_expect read_data: 00
+CE1(config)#
+2025-01-11 13:34:15,997 - netmiko - DEBUG - Pattern found: logging\ 192\.168\.1\.200 logging 192.168.1.200
+CE1(config)#
+2025-01-11 13:34:15,997 - netmiko - DEBUG - write_channel: b'logging trap informational\n'
+2025-01-11 13:34:15,997 - netmiko - DEBUG - Pattern is: logging\ trap\ informational
+2025-01-11 13:34:16,003 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:34:16,013 - netmiko - DEBUG - _read_channel_expect read_data: ogg
+2025-01-11 13:34:16,024 - netmiko - DEBUG - _read_channel_expect read_data: ing
+2025-01-11 13:34:16,035 - netmiko - DEBUG - _read_channel_expect read_data:  trap
+2025-01-11 13:34:16,045 - netmiko - DEBUG - _read_channel_expect read_data: info
+2025-01-11 13:34:16,056 - netmiko - DEBUG - _read_channel_expect read_data: rmat
+2025-01-11 13:34:16,067 - netmiko - DEBUG - _read_channel_expect read_data: iona
+2025-01-11 13:34:16,077 - netmiko - DEBUG - _read_channel_expect read_data: l
+CE1(config)#
+2025-01-11 13:34:16,078 - netmiko - DEBUG - Pattern found: logging\ trap\ informational logging trap informational
+CE1(config)#
+2025-01-11 13:34:16,078 - netmiko - DEBUG - write_channel: b'aaa new-model\n'
+2025-01-11 13:34:16,078 - netmiko - DEBUG - Pattern is: aaa\ new\-model
+2025-01-11 13:34:16,084 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:16,094 - netmiko - DEBUG - _read_channel_expect read_data: aa
+2025-01-11 13:34:16,105 - netmiko - DEBUG - _read_channel_expect read_data:  new
+2025-01-11 13:34:16,115 - netmiko - DEBUG - _read_channel_expect read_data: -mod
+2025-01-11 13:34:16,126 - netmiko - DEBUG - _read_channel_expect read_data: el
+CE1(config)#
+2025-01-11 13:34:16,126 - netmiko - DEBUG - Pattern found: aaa\ new\-model aaa new-model
+CE1(config)#
+2025-01-11 13:34:16,126 - netmiko - DEBUG - write_channel: b'aaa authentication login default local\n'
+2025-01-11 13:34:16,127 - netmiko - DEBUG - Pattern is: aaa\ authentication\ login\ default\ local
+2025-01-11 13:34:16,133 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:16,143 - netmiko - DEBUG - _read_channel_expect read_data: aa
+2025-01-11 13:34:16,154 - netmiko - DEBUG - _read_channel_expect read_data: aut
+2025-01-11 13:34:16,164 - netmiko - DEBUG - _read_channel_expect read_data: hent
+2025-01-11 13:34:16,175 - netmiko - DEBUG - _read_channel_expect read_data: icat
+2025-01-11 13:34:16,185 - netmiko - DEBUG - _read_channel_expect read_data: ion
+2025-01-11 13:34:16,196 - netmiko - DEBUG - _read_channel_expect read_data: logi
+2025-01-11 13:34:16,207 - netmiko - DEBUG - _read_channel_expect read_data: n de
+2025-01-11 13:34:16,217 - netmiko - DEBUG - _read_channel_expect read_data: faul
+2025-01-11 13:34:16,227 - netmiko - DEBUG - _read_channel_expect read_data: t lo
+2025-01-11 13:34:16,238 - netmiko - DEBUG - _read_channel_expect read_data: cal
+
+2025-01-11 13:34:16,238 - netmiko - DEBUG - Pattern found: aaa\ authentication\ login\ default\ local aaa authentication login default local
+
+2025-01-11 13:34:16,238 - netmiko - DEBUG - Pattern is: (?:CE1|#)
+2025-01-11 13:34:16,243 - netmiko - DEBUG - _read_channel_expect read_data: CE1(config)#
+2025-01-11 13:34:16,243 - netmiko - DEBUG - Pattern found: (?:CE1|#) CE1(config)#
+2025-01-11 13:34:16,244 - netmiko - DEBUG - write_channel: b'aaa authorization exec default local\n'
+2025-01-11 13:34:16,244 - netmiko - DEBUG - Pattern is: aaa\ authorization\ exec\ default\ local
+2025-01-11 13:34:16,249 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:16,260 - netmiko - DEBUG - _read_channel_expect read_data: aa a
+2025-01-11 13:34:16,270 - netmiko - DEBUG - _read_channel_expect read_data: utho
+2025-01-11 13:34:16,281 - netmiko - DEBUG - _read_channel_expect read_data: riza
+2025-01-11 13:34:16,291 - netmiko - DEBUG - _read_channel_expect read_data: tio
+2025-01-11 13:34:16,301 - netmiko - DEBUG - _read_channel_expect read_data: n e
+2025-01-11 13:34:16,312 - netmiko - DEBUG - _read_channel_expect read_data: xec
+2025-01-11 13:34:16,323 - netmiko - DEBUG - _read_channel_expect read_data: defa
+2025-01-11 13:34:16,333 - netmiko - DEBUG - _read_channel_expect read_data: ult l
+2025-01-11 13:34:16,343 - netmiko - DEBUG - _read_channel_expect read_data: oca
+2025-01-11 13:34:16,354 - netmiko - DEBUG - _read_channel_expect read_data: l
+CE1(config)#
+2025-01-11 13:34:16,354 - netmiko - DEBUG - Pattern found: aaa\ authorization\ exec\ default\ local aaa authorization exec default local
+CE1(config)#
+2025-01-11 13:34:16,355 - netmiko - DEBUG - write_channel: b'end\n'
+2025-01-11 13:34:16,355 - netmiko - DEBUG - Pattern is: end
+2025-01-11 13:34:16,360 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:34:16,371 - netmiko - DEBUG - _read_channel_expect read_data: nd
+CE1#
+2025-01-11 13:34:16,371 - netmiko - DEBUG - Pattern found: end end
+CE1#
+2025-01-11 13:34:16,372 - netmiko - DEBUG - write_channel: b'write memory\n'
+2025-01-11 13:34:16,372 - netmiko - DEBUG - Pattern is: write\ memory
+2025-01-11 13:34:16,377 - netmiko - DEBUG - _read_channel_expect read_data: w
+2025-01-11 13:34:16,387 - netmiko - DEBUG - _read_channel_expect read_data: rit
+2025-01-11 13:34:16,398 - netmiko - DEBUG - _read_channel_expect read_data: e me
+2025-01-11 13:34:16,408 - netmiko - DEBUG - _read_channel_expect read_data: mory
+2025-01-11 13:34:16,409 - netmiko - DEBUG - Pattern found: write\ memory write memory
+2025-01-11 13:34:16,409 - netmiko - DEBUG - Pattern is: (?:CE1|#)
+2025-01-11 13:34:16,410 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:16,420 - netmiko - DEBUG - _read_channel_expect read_data: Building configuration...
+
+2025-01-11 13:34:16,666 - netmiko - DEBUG - _read_channel_expect read_data: [OK]
+CE1#
+2025-01-11 13:34:16,666 - netmiko - DEBUG - Pattern found: (?:CE1|#)
+Building configuration...
+[OK]
+CE1#
+2025-01-11 13:34:16,666 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:16,666 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:34:16,672 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:16,682 - netmiko - DEBUG - _read_channel_expect read_data: CE1#
+2025-01-11 13:34:16,683 - netmiko - DEBUG - Pattern found: #
+CE1#
+2025-01-11 13:34:16,683 - netmiko - DEBUG - exit_config_mode:
+2025-01-11 13:34:16,683 - netmiko - DEBUG - configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+CE1(config)#ntp server 192.168.1.100
+CE1(config)#logging 192.168.1.200
+CE1(config)#logging trap informational
+CE1(config)#aaa new-model
+CE1(config)#aaa authentication login default local
+CE1(config)#aaa authorization exec default local
+CE1(config)#end
+CE1#write memory
+Building configuration...
+[OK]
+CE1#
+2025-01-11 13:34:16,683 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:16,784 - netmiko - DEBUG - read_channel:
+CE1#
+2025-01-11 13:34:16,885 - netmiko - DEBUG - read_channel:
+2025-01-11 13:34:18,886 - netmiko - DEBUG - read_channel:
+2025-01-11 13:34:18,887 - netmiko - DEBUG - write_channel: b'exit\n'
+2025-01-11 13:34:18,901 - paramiko.transport - DEBUG - starting thread (client mode): 0x3b348cd0
+2025-01-11 13:34:18,901 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.7.2
+2025-01-11 13:34:18,904 - paramiko.transport - DEBUG - EOF in transport thread
+2025-01-11 13:34:18,962 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-Cisco-1.25
+2025-01-11 13:34:18,963 - paramiko.transport - INFO - Connected (version 2.0, client Cisco-1.25)
+2025-01-11 13:34:18,971 - paramiko.transport - DEBUG - kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] server mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2025-01-11 13:34:18,971 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group-exchange-sha1
+2025-01-11 13:34:18,971 - paramiko.transport - DEBUG - HostKey agreed: ssh-rsa
+2025-01-11 13:34:18,972 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2025-01-11 13:34:18,972 - paramiko.transport - DEBUG - MAC agreed: hmac-sha2-256
+2025-01-11 13:34:18,972 - paramiko.transport - DEBUG - Compression agreed: none
+2025-01-11 13:34:19,194 - paramiko.transport - DEBUG - Got server p (2048 bits)
+2025-01-11 13:34:19,516 - paramiko.transport - DEBUG - kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2025-01-11 13:34:19,517 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-11 13:34:19,518 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 5.5.5.5: b'3faac3b53cce18152675183cfa422200'
+2025-01-11 13:34:19,744 - paramiko.transport - DEBUG - userauth is OK
+2025-01-11 13:34:20,030 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-11 13:34:20,031 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-11 13:34:20,039 - paramiko.transport - DEBUG - [chan 0] Max packet out: 4096 bytes
+2025-01-11 13:34:20,040 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-11 13:34:20,047 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-11 13:34:20,056 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-11 13:34:20,057 - netmiko - DEBUG - write_channel: b'terminal width 511\n'
+2025-01-11 13:34:20,057 - netmiko - DEBUG - Pattern is: terminal width 511
+2025-01-11 13:34:20,057 - netmiko - DEBUG - _read_channel_expect read_data: CE2>
+2025-01-11 13:34:20,073 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:34:20,083 - netmiko - DEBUG - _read_channel_expect read_data: erm
+2025-01-11 13:34:20,094 - netmiko - DEBUG - _read_channel_expect read_data: ina
+2025-01-11 13:34:20,105 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:34:20,115 - netmiko - DEBUG - _read_channel_expect read_data: width
+2025-01-11 13:34:20,126 - netmiko - DEBUG - _read_channel_expect read_data:  51
+2025-01-11 13:34:20,136 - netmiko - DEBUG - _read_channel_expect read_data: 1
+
+2025-01-11 13:34:20,136 - netmiko - DEBUG - Pattern found: terminal width 511 CE2>terminal width 511
+
+2025-01-11 13:34:20,137 - netmiko - DEBUG - In disable_paging
+2025-01-11 13:34:20,137 - netmiko - DEBUG - Command: terminal length 0
+
+2025-01-11 13:34:20,137 - netmiko - DEBUG - write_channel: b'terminal length 0\n'
+2025-01-11 13:34:20,137 - netmiko - DEBUG - Pattern is: terminal\ length\ 0
+2025-01-11 13:34:20,166 - netmiko - DEBUG - _read_channel_expect read_data: CE2>
+2025-01-11 13:34:20,190 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:34:20,205 - netmiko - DEBUG - _read_channel_expect read_data: erm
+2025-01-11 13:34:20,221 - netmiko - DEBUG - _read_channel_expect read_data: i
+2025-01-11 13:34:20,231 - netmiko - DEBUG - _read_channel_expect read_data: nal
+2025-01-11 13:34:20,244 - netmiko - DEBUG - _read_channel_expect read_data: leng
+2025-01-11 13:34:20,255 - netmiko - DEBUG - _read_channel_expect read_data: th 0
+
+2025-01-11 13:34:20,255 - netmiko - DEBUG - Pattern found: terminal\ length\ 0 CE2>terminal length 0
+
+2025-01-11 13:34:20,255 - netmiko - DEBUG - CE2>terminal length 0
+
+2025-01-11 13:34:20,255 - netmiko - DEBUG - Exiting disable_paging
+2025-01-11 13:34:20,265 - netmiko - DEBUG - read_channel: CE2>
+2025-01-11 13:34:20,265 - netmiko - DEBUG - Clear buffer detects data in the channel
+2025-01-11 13:34:20,286 - netmiko - DEBUG - read_channel:
+2025-01-11 13:34:20,286 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:20,297 - netmiko - DEBUG - read_channel:
+2025-01-11 13:34:20,297 - netmiko - DEBUG - read_channel:
+2025-01-11 13:34:20,297 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:20,307 - netmiko - DEBUG - read_channel:
+CE2>
+2025-01-11 13:34:20,328 - netmiko - DEBUG - read_channel:
+CE2>
+2025-01-11 13:34:20,328 - netmiko - DEBUG - Clear buffer detects data in the channel
+2025-01-11 13:34:20,349 - netmiko - DEBUG - read_channel:
+2025-01-11 13:34:20,349 - netmiko - DEBUG - [find_prompt()]: prompt is CE2>
+2025-01-11 13:34:20,350 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:20,350 - netmiko - DEBUG - Pattern is: CE2
+2025-01-11 13:34:20,370 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:20,381 - netmiko - DEBUG - _read_channel_expect read_data: CE2>
+2025-01-11 13:34:20,381 - netmiko - DEBUG - Pattern found: CE2
+CE2>
+2025-01-11 13:34:20,381 - netmiko - DEBUG - write_channel: b'enable\n'
+2025-01-11 13:34:20,381 - netmiko - DEBUG - Pattern is: enable
+2025-01-11 13:34:20,395 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:34:20,405 - netmiko - DEBUG - _read_channel_expect read_data: na
+2025-01-11 13:34:20,416 - netmiko - DEBUG - _read_channel_expect read_data: ble
+
+2025-01-11 13:34:20,416 - netmiko - DEBUG - Pattern found: enable enable
+
+2025-01-11 13:34:20,416 - netmiko - DEBUG - Pattern is: (CE2|ssword)
+2025-01-11 13:34:20,421 - netmiko - DEBUG - _read_channel_expect read_data: Password:
+2025-01-11 13:34:20,421 - netmiko - DEBUG - Pattern found: (CE2|ssword) Password:
+2025-01-11 13:34:20,422 - netmiko - DEBUG - write_channel: b'r@mAdan\n'
+2025-01-11 13:34:20,422 - netmiko - DEBUG - Pattern is: CE2
+2025-01-11 13:34:20,729 - netmiko - DEBUG - _read_channel_expect read_data:
+CE2#
+2025-01-11 13:34:20,729 - netmiko - DEBUG - Pattern found: CE2
+CE2#
+2025-01-11 13:34:20,729 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:20,729 - netmiko - DEBUG - Pattern is: CE2
+2025-01-11 13:34:20,741 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:20,752 - netmiko - DEBUG - _read_channel_expect read_data: CE2#
+2025-01-11 13:34:20,752 - netmiko - DEBUG - Pattern found: CE2
+CE2#
+2025-01-11 13:34:20,752 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:20,752 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:34:20,772 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:20,783 - netmiko - DEBUG - _read_channel_expect read_data: CE2#
+2025-01-11 13:34:20,783 - netmiko - DEBUG - Pattern found: #
+CE2#
+2025-01-11 13:34:20,784 - netmiko - DEBUG - write_channel: b'configure terminal\n'
+2025-01-11 13:34:20,784 - netmiko - DEBUG - Pattern is: configure\ terminal
+2025-01-11 13:34:20,797 - netmiko - DEBUG - _read_channel_expect read_data: c
+2025-01-11 13:34:20,807 - netmiko - DEBUG - _read_channel_expect read_data: on
+2025-01-11 13:34:20,818 - netmiko - DEBUG - _read_channel_expect read_data: fi
+2025-01-11 13:34:20,829 - netmiko - DEBUG - _read_channel_expect read_data: gur
+2025-01-11 13:34:20,839 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:34:20,851 - netmiko - DEBUG - _read_channel_expect read_data:  te
+2025-01-11 13:34:20,861 - netmiko - DEBUG - _read_channel_expect read_data: rmi
+2025-01-11 13:34:20,872 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:34:20,882 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:20,893 - netmiko - DEBUG - _read_channel_expect read_data: l
+
+2025-01-11 13:34:20,893 - netmiko - DEBUG - Pattern found: configure\ terminal configure terminal
+
+2025-01-11 13:34:20,893 - netmiko - DEBUG - Pattern is: CE2
+2025-01-11 13:34:20,896 - netmiko - DEBUG - _read_channel_expect read_data: Enter configuration commands, one per line.  End with CNTL/Z.
+CE2(config)#
+2025-01-11 13:34:20,896 - netmiko - DEBUG - Pattern found: CE2 Enter configuration commands, one per line.  End with CNTL/Z.
+CE2(config)#
+2025-01-11 13:34:20,896 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:20,896 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:34:20,925 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:20,936 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:34:20,936 - netmiko - DEBUG - Pattern found: #
+CE2(config)#
+2025-01-11 13:34:20,937 - netmiko - DEBUG - write_channel: b'ntp server 192.168.1.100\n'
+2025-01-11 13:34:20,937 - netmiko - DEBUG - Pattern is: ntp\ server\ 192\.168\.1\.100
+2025-01-11 13:34:20,950 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:34:20,961 - netmiko - DEBUG - _read_channel_expect read_data: tp
+2025-01-11 13:34:20,971 - netmiko - DEBUG - _read_channel_expect read_data:
+2025-01-11 13:34:20,982 - netmiko - DEBUG - _read_channel_expect read_data: se
+2025-01-11 13:34:20,992 - netmiko - DEBUG - _read_channel_expect read_data: rver
+2025-01-11 13:34:21,004 - netmiko - DEBUG - _read_channel_expect read_data:  1
+2025-01-11 13:34:21,014 - netmiko - DEBUG - _read_channel_expect read_data: 92.1
+2025-01-11 13:34:21,025 - netmiko - DEBUG - _read_channel_expect read_data: 68.
+2025-01-11 13:34:21,035 - netmiko - DEBUG - _read_channel_expect read_data: 1.1
+2025-01-11 13:34:21,046 - netmiko - DEBUG - _read_channel_expect read_data: 00
+
+2025-01-11 13:34:21,046 - netmiko - DEBUG - Pattern found: ntp\ server\ 192\.168\.1\.100 ntp server 192.168.1.100
+
+2025-01-11 13:34:21,046 - netmiko - DEBUG - Pattern is: (?:CE2|#)
+2025-01-11 13:34:21,049 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:34:21,049 - netmiko - DEBUG - Pattern found: (?:CE2|#) CE2(config)#
+2025-01-11 13:34:21,049 - netmiko - DEBUG - write_channel: b'logging 192.168.1.200\n'
+2025-01-11 13:34:21,050 - netmiko - DEBUG - Pattern is: logging\ 192\.168\.1\.200
+2025-01-11 13:34:21,067 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:34:21,079 - netmiko - DEBUG - _read_channel_expect read_data: o
+2025-01-11 13:34:21,089 - netmiko - DEBUG - _read_channel_expect read_data: ggi
+2025-01-11 13:34:21,100 - netmiko - DEBUG - _read_channel_expect read_data: ng
+2025-01-11 13:34:21,110 - netmiko - DEBUG - _read_channel_expect read_data:  19
+2025-01-11 13:34:21,122 - netmiko - DEBUG - _read_channel_expect read_data: 2.1
+2025-01-11 13:34:21,132 - netmiko - DEBUG - _read_channel_expect read_data: 68.1
+2025-01-11 13:34:21,142 - netmiko - DEBUG - _read_channel_expect read_data: .
+2025-01-11 13:34:21,153 - netmiko - DEBUG - _read_channel_expect read_data: 20
+2025-01-11 13:34:21,163 - netmiko - DEBUG - _read_channel_expect read_data: 0
+CE2(config)#
+2025-01-11 13:34:21,164 - netmiko - DEBUG - Pattern found: logging\ 192\.168\.1\.200 logging 192.168.1.200
+CE2(config)#
+2025-01-11 13:34:21,164 - netmiko - DEBUG - write_channel: b'logging trap informational\n'
+2025-01-11 13:34:21,164 - netmiko - DEBUG - Pattern is: logging\ trap\ informational
+2025-01-11 13:34:21,176 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:34:21,187 - netmiko - DEBUG - _read_channel_expect read_data: og
+2025-01-11 13:34:21,197 - netmiko - DEBUG - _read_channel_expect read_data: gi
+2025-01-11 13:34:21,208 - netmiko - DEBUG - _read_channel_expect read_data: ng
+2025-01-11 13:34:21,218 - netmiko - DEBUG - _read_channel_expect read_data: tr
+2025-01-11 13:34:21,231 - netmiko - DEBUG - _read_channel_expect read_data: ap i
+2025-01-11 13:34:21,241 - netmiko - DEBUG - _read_channel_expect read_data: nfo
+2025-01-11 13:34:21,252 - netmiko - DEBUG - _read_channel_expect read_data: rm
+2025-01-11 13:34:21,263 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:21,277 - netmiko - DEBUG - _read_channel_expect read_data: tio
+2025-01-11 13:34:21,292 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:34:21,303 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:21,315 - netmiko - DEBUG - _read_channel_expect read_data: l
+CE2(config)#
+2025-01-11 13:34:21,315 - netmiko - DEBUG - Pattern found: logging\ trap\ informational logging trap informational
+CE2(config)#
+2025-01-11 13:34:21,315 - netmiko - DEBUG - write_channel: b'aaa new-model\n'
+2025-01-11 13:34:21,316 - netmiko - DEBUG - Pattern is: aaa\ new\-model
+2025-01-11 13:34:21,340 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:21,373 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:21,385 - netmiko - DEBUG - _read_channel_expect read_data: a n
+2025-01-11 13:34:21,397 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:34:21,408 - netmiko - DEBUG - _read_channel_expect read_data: w-
+2025-01-11 13:34:21,419 - netmiko - DEBUG - _read_channel_expect read_data: mo
+2025-01-11 13:34:21,436 - netmiko - DEBUG - _read_channel_expect read_data: de
+2025-01-11 13:34:21,456 - netmiko - DEBUG - _read_channel_expect read_data: l
+2025-01-11 13:34:21,456 - netmiko - DEBUG - Pattern found: aaa\ new\-model aaa new-model
+2025-01-11 13:34:21,456 - netmiko - DEBUG - Pattern is: (?:CE2|#)
+2025-01-11 13:34:21,458 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:21,468 - netmiko - DEBUG - _read_channel_expect read_data: CE2(config)#
+2025-01-11 13:34:21,468 - netmiko - DEBUG - Pattern found: (?:CE2|#)
+CE2(config)#
+2025-01-11 13:34:21,470 - netmiko - DEBUG - write_channel: b'aaa authentication login default local\n'
+2025-01-11 13:34:21,470 - netmiko - DEBUG - Pattern is: aaa\ authentication\ login\ default\ local
+2025-01-11 13:34:21,488 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:21,500 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:21,523 - netmiko - DEBUG - _read_channel_expect read_data: a au
+2025-01-11 13:34:21,534 - netmiko - DEBUG - _read_channel_expect read_data: then
+2025-01-11 13:34:21,549 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:34:21,559 - netmiko - DEBUG - _read_channel_expect read_data: icat
+2025-01-11 13:34:21,571 - netmiko - DEBUG - _read_channel_expect read_data: i
+2025-01-11 13:34:21,588 - netmiko - DEBUG - _read_channel_expect read_data: o
+2025-01-11 13:34:21,599 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:34:21,609 - netmiko - DEBUG - _read_channel_expect read_data:  lo
+2025-01-11 13:34:21,620 - netmiko - DEBUG - _read_channel_expect read_data: gin
+2025-01-11 13:34:21,631 - netmiko - DEBUG - _read_channel_expect read_data: de
+2025-01-11 13:34:21,642 - netmiko - DEBUG - _read_channel_expect read_data: fa
+2025-01-11 13:34:21,657 - netmiko - DEBUG - _read_channel_expect read_data: u
+2025-01-11 13:34:21,668 - netmiko - DEBUG - _read_channel_expect read_data: lt
+2025-01-11 13:34:21,679 - netmiko - DEBUG - _read_channel_expect read_data: lo
+2025-01-11 13:34:21,689 - netmiko - DEBUG - _read_channel_expect read_data: cal
+CE2(config)#
+2025-01-11 13:34:21,690 - netmiko - DEBUG - Pattern found: aaa\ authentication\ login\ default\ local aaa authentication login default local
+CE2(config)#
+2025-01-11 13:34:21,690 - netmiko - DEBUG - write_channel: b'aaa authorization exec default local\n'
+2025-01-11 13:34:21,690 - netmiko - DEBUG - Pattern is: aaa\ authorization\ exec\ default\ local
+2025-01-11 13:34:21,730 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:21,747 - netmiko - DEBUG - _read_channel_expect read_data: a
+2025-01-11 13:34:21,757 - netmiko - DEBUG - _read_channel_expect read_data: a au
+2025-01-11 13:34:21,769 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:34:21,780 - netmiko - DEBUG - _read_channel_expect read_data: h
+2025-01-11 13:34:21,791 - netmiko - DEBUG - _read_channel_expect read_data: or
+2025-01-11 13:34:21,802 - netmiko - DEBUG - _read_channel_expect read_data: i
+2025-01-11 13:34:21,816 - netmiko - DEBUG - _read_channel_expect read_data: za
+2025-01-11 13:34:21,831 - netmiko - DEBUG - _read_channel_expect read_data: t
+2025-01-11 13:34:21,842 - netmiko - DEBUG - _read_channel_expect read_data: io
+2025-01-11 13:34:21,855 - netmiko - DEBUG - _read_channel_expect read_data: n
+2025-01-11 13:34:21,866 - netmiko - DEBUG - _read_channel_expect read_data:
+2025-01-11 13:34:21,877 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:34:21,888 - netmiko - DEBUG - _read_channel_expect read_data: xec de
+2025-01-11 13:34:21,899 - netmiko - DEBUG - _read_channel_expect read_data: f
+2025-01-11 13:34:21,910 - netmiko - DEBUG - _read_channel_expect read_data: aul
+2025-01-11 13:34:21,920 - netmiko - DEBUG - _read_channel_expect read_data: t lo
+2025-01-11 13:34:21,931 - netmiko - DEBUG - _read_channel_expect read_data: ca
+2025-01-11 13:34:21,941 - netmiko - DEBUG - _read_channel_expect read_data: l
+CE2(config)#
+2025-01-11 13:34:21,941 - netmiko - DEBUG - Pattern found: aaa\ authorization\ exec\ default\ local aaa authorization exec default local
+CE2(config)#
+2025-01-11 13:34:21,942 - netmiko - DEBUG - write_channel: b'end\n'
+2025-01-11 13:34:21,942 - netmiko - DEBUG - Pattern is: end
+2025-01-11 13:34:21,955 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:34:21,966 - netmiko - DEBUG - _read_channel_expect read_data: nd
+2025-01-11 13:34:21,966 - netmiko - DEBUG - Pattern found: end end
+2025-01-11 13:34:21,966 - netmiko - DEBUG - Pattern is: (?:CE2|#)
+2025-01-11 13:34:21,968 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:21,979 - netmiko - DEBUG - _read_channel_expect read_data: CE2#
+2025-01-11 13:34:21,979 - netmiko - DEBUG - Pattern found: (?:CE2|#)
+CE2#
+2025-01-11 13:34:21,979 - netmiko - DEBUG - write_channel: b'write memory\n'
+2025-01-11 13:34:21,979 - netmiko - DEBUG - Pattern is: write\ memory
+2025-01-11 13:34:22,001 - netmiko - DEBUG - _read_channel_expect read_data: w
+2025-01-11 13:34:22,012 - netmiko - DEBUG - _read_channel_expect read_data: r
+2025-01-11 13:34:22,028 - netmiko - DEBUG - _read_channel_expect read_data: it
+2025-01-11 13:34:22,039 - netmiko - DEBUG - _read_channel_expect read_data: e
+2025-01-11 13:34:22,055 - netmiko - DEBUG - _read_channel_expect read_data:
+2025-01-11 13:34:22,066 - netmiko - DEBUG - _read_channel_expect read_data: mem
+2025-01-11 13:34:22,076 - netmiko - DEBUG - _read_channel_expect read_data: o
+2025-01-11 13:34:22,087 - netmiko - DEBUG - _read_channel_expect read_data: ry
+
+2025-01-11 13:34:22,087 - netmiko - DEBUG - Pattern found: write\ memory write memory
+
+2025-01-11 13:34:22,087 - netmiko - DEBUG - Pattern is: (?:CE2|#)
+2025-01-11 13:34:22,098 - netmiko - DEBUG - _read_channel_expect read_data: Building configuration...
+
+2025-01-11 13:34:22,293 - netmiko - DEBUG - _read_channel_expect read_data: [OK]
+CE2#
+2025-01-11 13:34:22,293 - netmiko - DEBUG - Pattern found: (?:CE2|#) Building configuration...
+[OK]
+CE2#
+2025-01-11 13:34:22,294 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:22,294 - netmiko - DEBUG - Pattern is: #
+2025-01-11 13:34:22,308 - netmiko - DEBUG - _read_channel_expect read_data:
+
+2025-01-11 13:34:22,319 - netmiko - DEBUG - _read_channel_expect read_data: CE2#
+2025-01-11 13:34:22,319 - netmiko - DEBUG - Pattern found: #
+CE2#
+2025-01-11 13:34:22,319 - netmiko - DEBUG - exit_config_mode:
+2025-01-11 13:34:22,319 - netmiko - DEBUG - configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+CE2(config)#ntp server 192.168.1.100
+CE2(config)#logging 192.168.1.200
+CE2(config)#logging trap informational
+CE2(config)#aaa new-model
+CE2(config)#aaa authentication login default local
+CE2(config)#aaa authorization exec default local
+CE2(config)#end
+CE2#write memory
+Building configuration...
+[OK]
+CE2#
+2025-01-11 13:34:22,320 - netmiko - DEBUG - write_channel: b'\n'
+2025-01-11 13:34:22,420 - netmiko - DEBUG - read_channel:
+CE2#
+2025-01-11 13:34:22,521 - netmiko - DEBUG - read_channel:
+2025-01-11 13:34:24,523 - netmiko - DEBUG - read_channel:
+2025-01-11 13:34:24,523 - netmiko - DEBUG - write_channel: b'exit\n'

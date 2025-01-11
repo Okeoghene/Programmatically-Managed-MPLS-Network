@@ -23,4 +23,7 @@
   
 11/01/2025
 
-- I have advertised the stastic route into the MP-BGP but I am unable to ping within the MPLS network.
+- I have advertised the stastic route into the MP-BGP but I am unable to ping within the MPLS network. 
+- I sorted the inability for me to ping within the MPLS network.
+  The problem was that the PE had a default route as opposed to a static route.
+- I wrote a script to update the CE routers with some management config.
