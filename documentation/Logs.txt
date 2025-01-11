@@ -1,7 +1,6 @@
 30/12/2024
 
 -   I created the routers topology.
--   All routers are currently "Cisco IOU L3 157-3 2018" this is expected to change due to the capability requirement of the core routers and PE routers.
 
 31/12/2024
 
@@ -16,7 +15,12 @@
 - I assigned IP addresses and activated IGP on the core. I also enabled LDP on the core routers.
 - I repeated task above becasue I didnt save the config on the router before powering down.
 - I have had to change the core routers because there was not enough NVRAM on the router for the configurations.
-- All CEs' are currently "Cisco IOU L3 157-3 2018", all core routers are "CiscoIOSv15.9(3)M22020-1".
 - I have restored basic IP connectivity between all interfaces, apart from the networkAutomation device.
 - I have enabled MP-BGP and VFR omba_site1 on the core routers.
 - What is left is ensuring CE1 and CE2 can communicate.
+  Configuring Network automation to log into all routers.
+  
+  
+11/01/2025
+
+- I have advertised the stastic route into the MP-BGP but I am unable to ping within the MPLS network.
